@@ -48,6 +48,9 @@ public class Main
         double totalSum = register.totalOrderSum();
         double payment = 0;
 
+        // Prints receipt
+        System.out.println(register.getReceipt());
+
         // Gets payment from customer - Assuming valid input
         do
         {
@@ -160,19 +163,5 @@ public class Main
         {
             serveCustomer(scanner, products, cashRegister);
         }
-    }
-
-    public static void test()
-    {
-        // Create cash register
-        CashRegister cr = new CashRegister(100);
-
-        // Create Products
-        Product p1 = new Product("Coca Cola 1.5L", 8);
-        Product p2 = new Product("Chocolate Bar", 5.5);
-        Product p3 = new Product("Pizza", 13.75);
-        Product p4 = new Product("Ice Cream", 16.4);
-
-        // Customer #1
     }
 }
