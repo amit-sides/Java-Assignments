@@ -24,7 +24,7 @@ public class Main
     {
         // Prints products for user
         System.out.println("Available Products:");
-        int i=1;
+        int i = 1;
         for (Product product : products)
         {
             System.out.println(String.format("%2d %s", i++, product));
