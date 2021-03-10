@@ -2,6 +2,7 @@
 *.iml
 
 # Compiled class file
+!*solution/*.class
 *.class
 
 # Log file
