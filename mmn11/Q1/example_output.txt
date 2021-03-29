@@ -1,0 +1,133 @@
+Insert initial available cash: 1000
+Insert amount of products to list: 3
+Insert product #1: Coca Cola
+Insert product #1 price: 8
+Insert product #2: Chocolate Bar
+Insert product #2 price: 5.5
+Insert product #3: Ice Cream
+Insert product #3 price: 16.4
+Actions:
+ 1.	Add item
+ 2.	Print current total
+ 3.	Print current receipt
+ 4.	Checkout
+ 5.	Show available cash
+Please choose an action: 1
+
+Available Products:
+ 1 Coca Cola                8.00
+ 2 Chocolate Bar            5.50
+ 3 Ice Cream               16.40
+Please choose a product: 3
+Select quantity for product: 2
+=====================================================
+Actions:
+ 1.	Add item
+ 2.	Print current total
+ 3.	Print current receipt
+ 4.	Checkout
+ 5.	Show available cash
+Please choose an action: 1
+
+Available Products:
+ 1 Coca Cola                8.00
+ 2 Chocolate Bar            5.50
+ 3 Ice Cream               16.40
+Please choose a product: 2
+Select quantity for product: 4
+=====================================================
+Actions:
+ 1.	Add item
+ 2.	Print current total
+ 3.	Print current receipt
+ 4.	Checkout
+ 5.	Show available cash
+Please choose an action: 1
+
+Available Products:
+ 1 Coca Cola                8.00
+ 2 Chocolate Bar            5.50
+ 3 Ice Cream               16.40
+Please choose a product: 1
+Select quantity for product: 4
+=====================================================
+Actions:
+ 1.	Add item
+ 2.	Print current total
+ 3.	Print current receipt
+ 4.	Checkout
+ 5.	Show available cash
+Please choose an action: 2
+
+The current total sum is 86.8 .
+=====================================================
+Actions:
+ 1.	Add item
+ 2.	Print current total
+ 3.	Print current receipt
+ 4.	Checkout
+ 5.	Show available cash
+Please choose an action: 3
+
+┌----------------------------------------------┐
+| Ice Cream               16.40   x 2    32.80 |
+| Chocolate Bar            5.50   x 4    22.00 |
+| Coca Cola                8.00   x 4    32.00 |
+├----------------------------------------------┤
+| Total Sum                              86.80 |
+└----------------------------------------------┘
+
+=====================================================
+Actions:
+ 1.	Add item
+ 2.	Print current total
+ 3.	Print current receipt
+ 4.	Checkout
+ 5.	Show available cash
+Please choose an action: 5
+
+Current available cash in register is 1000.0 .
+=====================================================
+Actions:
+ 1.	Add item
+ 2.	Print current total
+ 3.	Print current receipt
+ 4.	Checkout
+ 5.	Show available cash
+Please choose an action: 4
+
+How much would you like to pay? 90
+Your change is: 3.200000000000003
+Thank you for your purchase! :)
+=====================================================
+Actions:
+ 1.	Add item
+ 2.	Print current total
+ 3.	Print current receipt
+ 4.	Checkout
+ 5.	Show available cash
+Please choose an action: 3
+
+┌----------------------------------------------┐
+├----------------------------------------------┤
+| Total Sum                               0.00 |
+└----------------------------------------------┘
+
+=====================================================
+Actions:
+ 1.	Add item
+ 2.	Print current total
+ 3.	Print current receipt
+ 4.	Checkout
+ 5.	Show available cash
+Please choose an action: 5
+
+Current available cash in register is 1086.8 .
+=====================================================
+Actions:
+ 1.	Add item
+ 2.	Print current total
+ 3.	Print current receipt
+ 4.	Checkout
+ 5.	Show available cash
+Please choose an action: 
