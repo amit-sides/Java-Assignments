@@ -185,6 +185,10 @@ public class Polynom {
     @Override
     public boolean equals(Object o)
     {
+        if (o == null)
+        {
+            return false;
+        }
         // Check if object is an instance of Polynom
         if (!(o instanceof Polynom))
         {
