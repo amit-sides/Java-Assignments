@@ -24,12 +24,8 @@ public class ServiceChargeChecking extends CheckingAccount {
     }
 
     @Override
-    void writeCheck(double price) throws IllegalBalance {
-        this.withdraw(price);
-    }
-
-    @Override
     void manage() {
+        // Since this account has no minimum balance, we will allow negative balance (debt to the bank)
         this.balance -= this.monthlyFees;
     }
 

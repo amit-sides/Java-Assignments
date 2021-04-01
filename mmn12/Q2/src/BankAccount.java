@@ -12,7 +12,10 @@ public abstract class BankAccount {
     }
 
     public void deposit(double money) {
-        this.balance += money;
+        if (money > 0)
+        {
+            this.balance += money;
+        }
     }
 
     public void withdraw(double money) throws IllegalBalance {

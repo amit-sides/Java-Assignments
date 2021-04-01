@@ -34,11 +34,6 @@ public class NoServiceChargeChecking extends CheckingAccount{
     }
 
     @Override
-    public void writeCheck(double price) throws IllegalBalance {
-        this.withdraw(price);
-    }
-
-    @Override
     public void manage() {
     }
 

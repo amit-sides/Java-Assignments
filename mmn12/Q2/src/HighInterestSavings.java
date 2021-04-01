@@ -7,8 +7,7 @@ public class HighInterestSavings extends SavingsAccount {
     private static final double DEFAULT_INTEREST_RATE = 0.5;
 
     public HighInterestSavings(String bankId, String id, String owner, double initial_balance) {
-        super(bankId, id, owner, initial_balance);
-        this.interestRate = DEFAULT_INTEREST_RATE;
+        super(bankId, id, owner, initial_balance, DEFAULT_INTEREST_RATE);
         this.minimumBalance = DEFAULT_MINIMUM_BALANCE;
     }
 

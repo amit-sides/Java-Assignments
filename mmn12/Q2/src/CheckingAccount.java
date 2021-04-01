@@ -4,7 +4,9 @@ public abstract class CheckingAccount extends BankAccount {
         super(bankId, id, owner, initial_balance);
     }
 
-    abstract void writeCheck(double price) throws IllegalBalance;
+    public void writeCheck(double price) throws IllegalBalance {
+        this.withdraw(price);
+    }
 
     @Override
     public String toString() {
