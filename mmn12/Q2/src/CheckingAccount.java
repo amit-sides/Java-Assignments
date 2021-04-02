@@ -1,3 +1,6 @@
+/**
+ * Represents a checking bank account.
+ */
 public abstract class CheckingAccount extends BankAccount {
 
     public CheckingAccount(String bankId, String id, String owner, double initial_balance) {

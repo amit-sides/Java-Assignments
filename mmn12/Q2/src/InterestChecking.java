@@ -1,5 +1,8 @@
 import java.util.Objects;
 
+/**
+ * Represents an interest savings bank account.
+ */
 public class InterestChecking extends NoServiceChargeChecking {
     private double interestRate;
 

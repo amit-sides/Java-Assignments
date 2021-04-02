@@ -1,3 +1,6 @@
+/**
+ * Represents a bank account.
+ */
 public abstract class BankAccount {
     protected String bankId;
     protected String id;

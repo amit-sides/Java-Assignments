@@ -1,5 +1,8 @@
 import java.util.Objects;
 
+/**
+ * Represents a savings bank account.
+ */
 public class SavingsAccount extends BankAccount {
     protected double interestRate;
 

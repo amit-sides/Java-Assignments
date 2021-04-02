@@ -1,5 +1,8 @@
 import java.util.Objects;
 
+/**
+ * Represents a bank account without monthly fees
+ */
 public class NoServiceChargeChecking extends CheckingAccount{
     protected double minimumBalance;
 

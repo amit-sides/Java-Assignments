@@ -1,5 +1,8 @@
 import java.util.Objects;
 
+/**
+ * Represents a high interest savings bank account.
+ */
 public class HighInterestSavings extends SavingsAccount {
     private double minimumBalance;
 

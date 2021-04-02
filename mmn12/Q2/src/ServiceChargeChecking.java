@@ -1,5 +1,8 @@
 import java.util.Objects;
 
+/**
+ * Represents a checking bank account with monthly fees.
+ */
 public class ServiceChargeChecking extends CheckingAccount {
     private double monthlyFees;
 
