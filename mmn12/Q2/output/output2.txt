@@ -1,0 +1,96 @@
+"C:\Program Files\Java\jdk1.8.0_281\bin\java.exe" "-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2020.3.2\lib\idea_rt.jar=55456:C:\Program Files\JetBrains\IntelliJ IDEA 2020.3.2\bin" -Dfile.encoding=UTF-8 -classpath "C:\Program Files\Java\jdk1.8.0_281\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_281\jre\lib\deploy.jar;C:\Program Files\Java\jdk1.8.0_281\jre\lib\ext\access-bridge-64.jar;C:\Program Files\Java\jdk1.8.0_281\jre\lib\ext\cldrdata.jar;C:\Program Files\Java\jdk1.8.0_281\jre\lib\ext\dnsns.jar;C:\Program Files\Java\jdk1.8.0_281\jre\lib\ext\jaccess.jar;C:\Program Files\Java\jdk1.8.0_281\jre\lib\ext\jfxrt.jar;C:\Program Files\Java\jdk1.8.0_281\jre\lib\ext\localedata.jar;C:\Program Files\Java\jdk1.8.0_281\jre\lib\ext\nashorn.jar;C:\Program Files\Java\jdk1.8.0_281\jre\lib\ext\sunec.jar;C:\Program Files\Java\jdk1.8.0_281\jre\lib\ext\sunjce_provider.jar;C:\Program Files\Java\jdk1.8.0_281\jre\lib\ext\sunmscapi.jar;C:\Program Files\Java\jdk1.8.0_281\jre\lib\ext\sunpkcs11.jar;C:\Program Files\Java\jdk1.8.0_281\jre\lib\ext\zipfs.jar;C:\Program Files\Java\jdk1.8.0_281\jre\lib\javaws.jar;C:\Program Files\Java\jdk1.8.0_281\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_281\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_281\jre\lib\jfxswt.jar;C:\Program Files\Java\jdk1.8.0_281\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_281\jre\lib\management-agent.jar;C:\Program Files\Java\jdk1.8.0_281\jre\lib\plugin.jar;C:\Program Files\Java\jdk1.8.0_281\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_281\jre\lib\rt.jar;C:\Users\amit\Desktop\Courses\Advanced Java\Java-Assignments\mmn12\Q2\out\production\Q2" Main
+Using seed: 1449528386
+ServiceChargeChecking{bankId='BU11', id='Abraham', owner='11', balance=74340.0, monthlyFees=6.0}
+SavingsAccount{bankId='BU32', id='Benny', owner='32', balance=200000.0, interestRate=0.3}
+InterestChecking{bankId='BU99', id='Charles', owner='99', balance=66666.0, minimumBalance=666.0, interestRate=0.66}
+NoServiceChargeChecking{bankId='BU23', id='Dan', owner='23', balance=1234.0, minimumBalance=10000.0}
+HighInterestSavings{bankId='BU74', id='Elon', owner='74', balance=455012.0, interestRate=0.5, minimumBalance=10000.0}
+InterestChecking{bankId='BU65', id='Frank', owner='65', balance=55000.0, minimumBalance=100000.0, interestRate=0.2}
+SavingsAccount{bankId='BU95', id='Gabriel', owner='95', balance=154000.0, interestRate=0.22}
+HighInterestSavings{bankId='BU03', id='Hellen', owner='03', balance=350666.0, interestRate=0.5, minimumBalance=10000.0}
+NoServiceChargeChecking{bankId='BU14', id='Iris', owner='14', balance=56463.0, minimumBalance=1000.0}
+=================================================
+Performing actions...
+ServiceChargeChecking{bankId='BU11', id='Abraham', owner='11', balance=74340.0, monthlyFees=6.0}
+Deposit: 7159.1295848991185
+ServiceChargeChecking{bankId='BU11', id='Abraham', owner='11', balance=81499.12958489911, monthlyFees=6.0}
+Withdraw:153.65711489793455
+ServiceChargeChecking{bankId='BU11', id='Abraham', owner='11', balance=81345.47247000119, monthlyFees=6.0}
+Manage:
+ServiceChargeChecking{bankId='BU11', id='Abraham', owner='11', balance=81339.47247000119, monthlyFees=6.0}
+=================================================
+Performing actions...
+SavingsAccount{bankId='BU32', id='Benny', owner='32', balance=200000.0, interestRate=0.3}
+Deposit: 2147.014242239945
+SavingsAccount{bankId='BU32', id='Benny', owner='32', balance=202147.01424223994, interestRate=0.3}
+Withdraw:823.9706052113858
+SavingsAccount{bankId='BU32', id='Benny', owner='32', balance=201323.04363702855, interestRate=0.3}
+Manage:
+SavingsAccount{bankId='BU32', id='Benny', owner='32', balance=201927.01276793962, interestRate=0.3}
+=================================================
+Performing actions...
+InterestChecking{bankId='BU99', id='Charles', owner='99', balance=66666.0, minimumBalance=666.0, interestRate=0.66}
+Deposit: 3808.6173706172117
+InterestChecking{bankId='BU99', id='Charles', owner='99', balance=70474.61737061721, minimumBalance=666.0, interestRate=0.66}
+Withdraw:225.8314472894769
+InterestChecking{bankId='BU99', id='Charles', owner='99', balance=70248.78592332774, minimumBalance=666.0, interestRate=0.66}
+Manage:
+InterestChecking{bankId='BU99', id='Charles', owner='99', balance=70712.4279104217, minimumBalance=666.0, interestRate=0.66}
+=================================================
+Performing actions...
+NoServiceChargeChecking{bankId='BU23', id='Dan', owner='23', balance=1234.0, minimumBalance=10000.0}
+Deposit: 3904.4117225694395
+NoServiceChargeChecking{bankId='BU23', id='Dan', owner='23', balance=5138.411722569439, minimumBalance=10000.0}
+Withdraw:484.96455762456526
+IllegalBalance Exception: failed to withdraw 484.96455762456526
+NoServiceChargeChecking{bankId='BU23', id='Dan', owner='23', balance=5138.411722569439, minimumBalance=10000.0}
+Manage:
+NoServiceChargeChecking{bankId='BU23', id='Dan', owner='23', balance=5138.411722569439, minimumBalance=10000.0}
+=================================================
+Performing actions...
+HighInterestSavings{bankId='BU74', id='Elon', owner='74', balance=455012.0, interestRate=0.5, minimumBalance=10000.0}
+Deposit: 4977.588205818289
+HighInterestSavings{bankId='BU74', id='Elon', owner='74', balance=459989.58820581826, interestRate=0.5, minimumBalance=10000.0}
+Withdraw:391.44448971873203
+HighInterestSavings{bankId='BU74', id='Elon', owner='74', balance=459598.14371609956, interestRate=0.5, minimumBalance=10000.0}
+Manage:
+HighInterestSavings{bankId='BU74', id='Elon', owner='74', balance=461896.13443468005, interestRate=0.5, minimumBalance=10000.0}
+=================================================
+Performing actions...
+InterestChecking{bankId='BU65', id='Frank', owner='65', balance=55000.0, minimumBalance=100000.0, interestRate=0.2}
+Deposit: 4868.0634267371
+InterestChecking{bankId='BU65', id='Frank', owner='65', balance=59868.0634267371, minimumBalance=100000.0, interestRate=0.2}
+Withdraw:524.7748165383896
+IllegalBalance Exception: failed to withdraw 524.7748165383896
+InterestChecking{bankId='BU65', id='Frank', owner='65', balance=59868.0634267371, minimumBalance=100000.0, interestRate=0.2}
+Manage:
+InterestChecking{bankId='BU65', id='Frank', owner='65', balance=59987.79955359057, minimumBalance=100000.0, interestRate=0.2}
+=================================================
+Performing actions...
+SavingsAccount{bankId='BU95', id='Gabriel', owner='95', balance=154000.0, interestRate=0.22}
+Deposit: 451.4058729801311
+SavingsAccount{bankId='BU95', id='Gabriel', owner='95', balance=154451.40587298013, interestRate=0.22}
+Withdraw:524.0053772502802
+SavingsAccount{bankId='BU95', id='Gabriel', owner='95', balance=153927.40049572985, interestRate=0.22}
+Manage:
+SavingsAccount{bankId='BU95', id='Gabriel', owner='95', balance=154266.04077682045, interestRate=0.22}
+=================================================
+Performing actions...
+HighInterestSavings{bankId='BU03', id='Hellen', owner='03', balance=350666.0, interestRate=0.5, minimumBalance=10000.0}
+Deposit: 335.88363007386414
+HighInterestSavings{bankId='BU03', id='Hellen', owner='03', balance=351001.88363007386, interestRate=0.5, minimumBalance=10000.0}
+Withdraw:875.7972509772216
+HighInterestSavings{bankId='BU03', id='Hellen', owner='03', balance=350126.08637909667, interestRate=0.5, minimumBalance=10000.0}
+Manage:
+HighInterestSavings{bankId='BU03', id='Hellen', owner='03', balance=351876.71681099216, interestRate=0.5, minimumBalance=10000.0}
+=================================================
+Performing actions...
+NoServiceChargeChecking{bankId='BU14', id='Iris', owner='14', balance=56463.0, minimumBalance=1000.0}
+Deposit: 954.2364359467941
+NoServiceChargeChecking{bankId='BU14', id='Iris', owner='14', balance=57417.2364359468, minimumBalance=1000.0}
+Withdraw:413.3563048083364
+NoServiceChargeChecking{bankId='BU14', id='Iris', owner='14', balance=57003.88013113846, minimumBalance=1000.0}
+Manage:
+NoServiceChargeChecking{bankId='BU14', id='Iris', owner='14', balance=57003.88013113846, minimumBalance=1000.0}
+
+Process finished with exit code 0

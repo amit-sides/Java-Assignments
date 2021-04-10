@@ -1,0 +1,22 @@
+Actions:
+ 1.	Sum 2 polynoms
+ 2.	Subtract 2 polynoms
+ 3.	Derivative a polynom
+Please choose an action: 1
+
+Enter first polynom:
+Enter number of terms: 0
+
+Enter second polynom:
+Enter number of terms: 1
+Insert term's power #1 : 123
+Insert term's coefficient #1 : 0
+
+===============================================================
+0
++
+0
+-------------------------------------------------------
+0
+
+Process finished with exit code 0
