@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Iterator;
 
 public class SortedGroup <T extends Comparable<T>>{
     private ArrayList<T> data;
@@ -20,7 +21,7 @@ public class SortedGroup <T extends Comparable<T>>{
             mid = (low + high) / 2;
             if (data.get(mid).compareTo(item) < 0)
             {
-                low = mid;
+                low = mid + 1;
             }
             else
             {
@@ -48,5 +49,29 @@ public class SortedGroup <T extends Comparable<T>>{
             this.data.remove(i);
         }
         return count;
+    }
+
+    public Iterator<T> iterator() {
+        return new SortedGroupIterator();
+    }
+
+    public class SortedGroupIterator implements Iterator<T> {
+
+        private int index;
+
+        public SortedGroupIterator() {
+            index = 0;
+        }
+
+        @Override
+        public boolean hasNext() {
+
+            return index < data.size();
+        }
+
+        @Override
+        public T next() {
+            return data.get(index++);
+        }
     }
 }
