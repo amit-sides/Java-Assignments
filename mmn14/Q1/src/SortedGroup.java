@@ -10,7 +10,8 @@ public class SortedGroup <T extends Comparable<T>>{
     }
 
     // Finds the index in the ArrayList of the given item, if it would have been inserted into the ArrayList
-    public int find(T item)
+    // Or, in simple words: Find the index that the given item should be inserted at in-order to keep the ArrayList sorted
+    private int find(T item)
     {
         int low = 0;
         int high = data.size();
@@ -39,7 +40,10 @@ public class SortedGroup <T extends Comparable<T>>{
 
     public int remove(T item)
     {
+        // Find the index of the first item that is higher / equal to the given item.
         int i = this.find(item);
+
+        // Remove items starting at index i until we encounter a higher item & count removed items
         int count = 0;
         for (; i < this.data.size(); count++) {
             if (this.data.get(i).compareTo(item) != 0)
