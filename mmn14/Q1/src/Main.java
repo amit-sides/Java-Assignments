@@ -2,90 +2,52 @@ import java.util.Iterator;
 
 public class Main {
     public static void main(String[] args) {
-        SortedGroup<Student> checkArray = new SortedGroup<Student>();
-        SortedGroup<Student> checkSingles = new SortedGroup<Student>();
-        SortedGroup<Student> StudentsGroup = new SortedGroup<Student>();
+        SortedGroup<Student> students = new SortedGroup<Student>();
+        Student s1 = new Student("S1", "111111111", 43);
+        Student s2 = new Student("S2", "222222222", 77);
+        Student s3 = new Student("S3", "333333333", 21);
+        Student s4 = new Student("S4", "444444444", 54);
+        Student s5 = new Student("S5", "555555555", 60);
+        Student s6 = new Student("S6", "666666666", 66);
+        Student s7 = new Student("S7", "777777777", 77);
+        Student s8 = new Student("S8", "888888888", 100);
 
-//        // From array
-//        int [] arr = {10, 20, 30, 1, 7, 12, 0, 1, 1, 1, 7, 11, 12331};
-//        for(int i = 0; i < arr.length; i++){
-//            checkArray.add(arr[i]);
-//        }
-//        System.out.println("All the elements: "+checkArray);
-//        System.out.println("After reduce by 10: "+reduceCheck.reduce(checkArray, 10));
-//        for(int i = 0; i <arr.length; i++){
-//            if(arr[i] % 2 == 0){
-//                checkArray.remove(arr[i]);
-//            }
-//        }
-//        System.out.println("After removing odd numbers: "+checkArray);
-//        System.out.println("After reduce by 10: "+reduceCheck.reduce(checkArray, 10));
-//
-//        // one element each time
-//        checkSingles.add(1123);
-//        checkSingles.add(44);
-//        checkSingles.add(12);
-//        //check.add("Hey"); // expected Error
-//        //check.add(122.2); // expected Error
-//        checkSingles.add(1);
-//        System.out.println("All the elements: "+checkSingles);
-//        System.out.println("After reduce by 10: "+reduceCheck.reduce(checkSingles, 10));
-//        checkSingles.remove(1123);
-//        checkSingles.remove(11); // in case the object doesnt exist - does nothing special
-//        System.out.println("After removing: "+checkSingles);
-//        System.out.println("After reduce by 10: "+reduceCheck.reduce(checkSingles, 10));
-        // Students list
-        // Students list
-        Student s1 = new Student("Adam", "0101", 100);
-        Student s2 = new Student("Omer", "1111", 96);
-        Student s3 = new Student("Yair", "0001", 55);
-        Student s4 = new Student("Sarah", "0000", 18);
-        Student s5 = new Student("Amit", "1011", 99);
-        Student s6 = new Student("Igal", "1000", 99);
-        Student s7 = new Student("Ron", "1100", 48);
-        Student s8 = new Student("Liran", "1001", 12);
-        Student s9 = new Student("Eve", "0010", 12);
-        Student s10 = new Student("Tomer", "1011", 60);
+        students.add(s1);
+        students.add(s2);
+        students.add(s3);
+        students.add(s4);
+        students.add(s5);
+        students.add(s6);
+        students.add(s7);
+        students.add(s8);
 
-        // Students Group creation
-        StudentsGroup.add(s1);
-        StudentsGroup.add(s2);
-        StudentsGroup.add(s3);
-        StudentsGroup.add(s4);
-        StudentsGroup.add(s5);
-        StudentsGroup.add(s6);
-        StudentsGroup.add(s7);
-        StudentsGroup.add(s8);
-        StudentsGroup.add(s9);
-        StudentsGroup.add(s10);
-
-        // Print all Students
-        System.out.println("All the students are:\n");
-        for(Iterator<Student> i = StudentsGroup.iterator(); i.hasNext();){
-            System.out.println(i.next());
-            System.out.println("----------\n");
+        System.out.println("Students at start:");
+        for(Iterator<Student> i = students.iterator(); i.hasNext();){
+            Student s = i.next();
+            System.out.println(s);
         }
+        System.out.println("\n========================================================\n");
 
-        // Remove Adam and Eve
-        StudentsGroup.remove(s1);
-        StudentsGroup.remove(s9);
+        // Remove s1 and s3
+        students.remove(s1);
+        students.remove(s3);
 
-        System.out.println("All the students after Adam and Eve were banished, are:\n");
-        for(Iterator<Student> i = StudentsGroup.iterator(); i.hasNext();){
-            System.out.println(i.next());
-            System.out.println("----------\n");
+        System.out.println("Students after removal:");
+        for(Iterator<Student> i = students.iterator(); i.hasNext();){
+            Student s = i.next();
+            System.out.println(s);
         }
+        System.out.println("\n========================================================\n");
 
-        // Reduce (lower than 60)
+        // Filter failed students
         Student failureGradeStudent = new Student("", "", 60);
-        StudentsGroup = Util.reduce(StudentsGroup, failureGradeStudent); // Tomer(s10) as reference to grade 60
+        SortedGroup<Student> passedStudents = Util.reduce(students, failureGradeStudent);
 
-        System.out.println("All the students with 60+ grade, are:\n"); // getting rid of: Yair, Sarah, Ron, Liran, Tomer
-        for(Iterator<Student> i = StudentsGroup.iterator(); i.hasNext();){
-            System.out.println(i.next());
-            System.out.println("----------\n");
+        System.out.println("Successful students:");
+        for(Iterator<Student> i = passedStudents.iterator(); i.hasNext();){
+            Student s = i.next();
+            System.out.println(s);
         }
+        System.out.println("\n========================================================\n");
     }
-
 }
-
