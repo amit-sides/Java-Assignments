@@ -3,7 +3,8 @@ package C;
 public class Data{
     private int x = 0;
     private int y = 0;
-    private int readers; // when readers = -1, it means that someone is writing to the object
+    private int readers; // Count the number of readers.
+    // When readers is -1, it means that someone is writing to the object, and no else may enter the critical section.
 
     public Data (int x, int y){
         this.x = x;
