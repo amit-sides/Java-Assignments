@@ -11,7 +11,9 @@ public class Data{
         this.y = y;
         this.readers = 0;
     }
-    public synchronized int getDiff(){
+
+    private synchronized void acquireReadLock()
+    {
         while (this.readers < 0)
         {
             try {
@@ -20,13 +22,16 @@ public class Data{
         }
 
         this.readers++;
-        int diff = Math.abs(x-y);
+    }
+
+    private synchronized void releaseReadLock()
+    {
         this.readers--;
         notifyAll();
-
-        return diff;
     }
-    public synchronized void update(int dx, int dy){
+
+    private synchronized void acquireWriteLock()
+    {
         while(this.readers != 0)
         {
             try {
@@ -35,9 +40,26 @@ public class Data{
         }
 
         this.readers--;
-        x = x + dx;
-        y = y + dy;
+    }
+
+    private synchronized void releaseWriteLock()
+    {
         this.readers++;
         notifyAll();
+    }
+
+    public int getDiff()
+    {
+        acquireReadLock();
+        int diff = Math.abs(x-y);
+        releaseReadLock();
+        return diff;
+    }
+    public void update(int dx, int dy)
+    {
+        acquireWriteLock();
+        x = x + dx;
+        y = y + dy;
+        releaseWriteLock();
     }
 }
